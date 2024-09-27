@@ -1,0 +1,7 @@
+.back-img {
+    background: url("../img/background.webp");
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
