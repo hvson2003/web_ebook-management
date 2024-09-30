@@ -4,13 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home Page</title>
-	<%@include file="components/header.jsp" %>
+	<%@include file="components/user/header.jsp" %>
+	<%@ page import="java.sql.Connection" %>
+	<%@ page import="com.DB.DBConnect" %>
+
 </head>
 <body>
-    <%@ include file="components/top-app-bar.jsp" %>
+    <%@ include file="components/user/top-app-bar.jsp" %>
 	<div class="container-fluid back-img">
 		<h2 class="text-center text-danger">Ebook Management System</h2>
 	</div>
+
+	<% 
+		Connection conn = DBConnect.getConn();
+	%>
 
 	<hr>
 
@@ -237,6 +244,6 @@
 		</div>
 	</div>
 
-	<%@include file="components/footer.jsp" %>
+	<%@include file="components/user/footer.jsp" %>
 </body>
 </html>

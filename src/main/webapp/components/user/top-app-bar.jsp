@@ -10,8 +10,8 @@
       </form>
 		</div>
     <div class="col-md-3">
-      <a href="" class="btn btn-success">Login</a>
-      <a href="" class="btn btn-primary">Register</a>
+      <a href="login.jsp" class="btn btn-success">Login</a>
+      <a href="register.jsp" class="btn btn-primary">Register</a>
     </div>
 	</div>
 </div>
@@ -21,7 +21,7 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
+          <a class="nav-link active" aria-current="page" href="home.jsp"><i class="fa-solid fa-house"></i> Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fa-solid fa-book-bookmark"></i> Recent Book</a>
