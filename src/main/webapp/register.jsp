@@ -22,32 +22,39 @@
 
 						<c:if test="${not empty successMessage}">
 							<p class="text-center text-success">${successMessage}</p>
+                            <c:remove var="successMessage" scope="session" />
 						</c:if>
 
 						<c:if test="${not empty failedMessage}">
 							<p class="text-center text-danger">${failedMessage}</p>
+                            <c:remove var="failedMessage" scope="session" />
 						</c:if>
 
 						<form action="register" method="post">
 							<div class="mb-3">
 								<label for="fullname" class="form-label">Fullname</label>
 								<input type="text" class="form-control" id="fullname" name="fullname">
-							 </div>
+                            </div>
 
-							 <div class="mb-3">
-								<label for="email" class="form-label">Email address</label>
-								<input type="email" class="form-control" id="email" name="email">
-							 </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
 
-							 <div class="mb-3">
-								<label for="phone" class="form-label">Phone Number</label>
-								<input type="text" class="form-control" id="phone" name="phone">
-							 </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" name="phone">
+                            </div>
 
-							 <div class="mb-3">
-								<label for="password" class="form-label">Password</label>
-								<input type="password" class="form-control" id="password" name="password">
-							 </div>		
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+
+                           <div class="mb-3 form-check">
+                             <input type="checkbox" name="check" class="form-check-input" id="exampleCheck1">
+                             <label class="form-check-label" for="exampleCheck1">Agree with all our terms and conditions</label>
+                           </div>
 							 					 
 							<button type="submit" class="btn btn-primary">Submit</button>
 						  </form>
